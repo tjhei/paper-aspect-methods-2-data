@@ -11,20 +11,20 @@ and contains data files and code to reproduce the computations of the paper.
 Contents
 --------
 
-aspect - the version of ASPECT used in the paper (v.1.5.0, git submodule, so you might need to run ``git submodule init && git submodule update`` if you did not clone this repository with ``--recursive``.
+``aspect/`` - the version of ASPECT used in the paper (v.1.5.0, git submodule, so you might need to run ``git submodule init && git submodule update`` if you did not clone this repository with ``--recursive``.
 
-solver_ala_im_vs_expl - solver comparison for implicit vs explicit compressible ALA (Table 1)
+``solver_ala_im_vs_expl/`` - solver comparison for implicit vs explicit compressible ALA (Table 1)
 
-tangurnis - TanGurnis compressible Stokes benchmark, see ASPECT (Table 2)
+``tangurnis/`` - TanGurnis compressible Stokes benchmark, see ASPECT (Table 2)
 
-king - King2010 benchmark (Table 4 and Appendix)
+``king/`` - King2010 benchmark (Table 4 and Appendix)
 
-sinker - Sinker problem, averaging of properties (Figure 2-5, Table 5)
+``sinker/`` - Sinker problem, averaging of properties (Figure 2-5, Table 5)
 
-latent-heat - Latent heat benchmark (Figure 7)
+``latent-heat/`` - Latent heat benchmark (Figure 7)
 
-global-adaptive-refinement - Global 2d convection and adaptive mesh refinement (Figure 8)
+``global-adaptive-refinement/`` - Global 2d convection and adaptive mesh refinement (Figure 8)
 
-finite_strain - Tracking finite strain example (Figure 9)
+``finite_strain/`` - Tracking finite strain example (Figure 9)
 
-application - Global, 3d mantle convection example (Figure 10)
+``application/`` - Global, 3d mantle convection example (Figure 10)
