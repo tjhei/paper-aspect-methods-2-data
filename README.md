@@ -19,7 +19,9 @@ Contents
 
 ``king/`` - King2010 benchmark (Table 4 and Appendix)
 
-``sinker/`` - Sinker problem, averaging of properties (Figure 2-5, Table 5)
+``sinker/`` - Sinker problem, averaging of properties (Figure 2 and 4, Table 5)
+
+``inclusion/`` - Inclusion benchmark with reference solution (Figure 3 and 5)
 
 ``latent-heat/`` - Latent heat benchmark (Figure 7)
 
