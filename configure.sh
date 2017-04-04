@@ -2,7 +2,6 @@
 
 MAINPATH=`pwd`
 
-cd aspect && cmake . && make -j 8 || exit 42
 
 for path in "application" "inclusion" "solver_ala_im_vs_expl" "king"
 do

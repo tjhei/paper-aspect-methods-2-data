@@ -142,7 +142,7 @@ subsection Discretization
 end
 
 subsection Formulation
-  set Formulation = BA
+  set Formulation = boussinesq approximation
 end
 
 

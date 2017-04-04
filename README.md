@@ -36,8 +36,16 @@ Contents
 Instructions
 ------------
 
+install ASPECT:
 ```
 export DEAL_II_DIR=/ssd/deal-releases/dealii-8.4.2/installed/
 export ASPECT_DIR=`pwd`/aspect
+git submodule init
+git submodule update
+cd aspect && cmake -D CMAKE_BUILD_TYPE=Release . && make -j 8
+```
+
+compile plugins (with ``ASPECT_DIR`` set):
+```
 ./configure.sh
 ```
