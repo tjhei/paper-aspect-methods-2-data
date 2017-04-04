@@ -31,3 +31,13 @@ Contents
 ``finite_strain/`` - Tracking finite strain example (Figure 9)
 
 ``application/`` - Global, 3d mantle convection example (Figure 10)
+
+
+Instructions
+------------
+
+```
+export DEAL_II_DIR=/ssd/deal-releases/dealii-8.4.2/installed/
+export ASPECT_DIR=`pwd`/aspect
+./configure.sh
+```
