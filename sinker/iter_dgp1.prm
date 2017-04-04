@@ -1,0 +1,18 @@
+include sinker-with-averaging.prm
+
+set Dimension                              = 2
+
+set Linear solver tolerance                    = 1e-7
+set Number of cheap Stokes solver steps        = 0
+
+
+
+subsection Mesh refinement
+set Initial global refinement = {4|8}
+end
+subsection Material model
+set Material averaging = none
+end
+subsection Discretization
+set Use locally conservative discretization = true
+end
