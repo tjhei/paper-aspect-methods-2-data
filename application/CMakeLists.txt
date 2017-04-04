@@ -16,8 +16,3 @@ ADD_LIBRARY(${TARGET} SHARED citcom_reference_comparison.cc
 citcom_reference_comparison.h)
 ASPECT_SETUP_PLUGIN(${TARGET})
 
-SET(TARGET "composition_threshold")
-PROJECT(${TARGET})
-
-ADD_LIBRARY(${TARGET} SHARED composition_threshold.cc composition_threshold.h)
-ASPECT_SETUP_PLUGIN(${TARGET})
