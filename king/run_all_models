@@ -27,7 +27,7 @@ for formulation in ala tala; do
 
         echo "set Output directory = $case" >> current.prm
         echo "Starting $case"
-        cat ala.prm current.prm | mpirun -np 4 ./aspect -- >log_$case.log 2>&1
+        cat ala.prm current.prm | mpirun -np 4 ./aspect -- >log 2>&1
       done
     done
   done

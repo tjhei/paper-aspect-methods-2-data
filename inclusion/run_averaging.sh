@@ -5,8 +5,7 @@ for avg in "none" "arithmetic average" "geometric average" "harmonic average" "p
 do
 	filename=`echo $avg | sed 's/ /_/g'`
 	echo "writing $filename..."
-	rm $filename
-	echo "# DoFs L_2_error_velocity L_2_error_pressure" >> $filename
+	echo "# DoFs L_2_error_velocity L_2_error_pressure" > $filename
 	for r in "3" "4" "5" "6" "7" "8" "9" "10"
 	do
 	echo "ref $r:"

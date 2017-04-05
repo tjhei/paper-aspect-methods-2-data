@@ -4,8 +4,7 @@
 for avg in "none" "arithmetic average" "geometric average" "harmonic average" "pick largest" "project to Q1"
 do
 	filename=`echo $avg Q2DGQ1 | sed 's/ /_/g'`
-	rm $filename
-	echo "# DoFs L_2_error_velocity L_2_error_pressure" >> $filename
+	echo "# DoFs L_2_error_velocity L_2_error_pressure" > $filename
 	for r in "3" "4" "5" "6" "7" "8" "9" "10"
 	do
 	echo "ref $r:"
