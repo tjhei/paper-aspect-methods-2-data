@@ -3,7 +3,7 @@
 MAINPATH=`pwd`
 
 
-for path in "application" "inclusion" "solver_ala_im_vs_expl" "king"
+for path in "application" "finite_strain" "inclusion" "solver_ala_im_vs_expl" "king"
 do
   cd $MAINPATH
   cd $path
