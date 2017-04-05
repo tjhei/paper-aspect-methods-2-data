@@ -23,7 +23,7 @@ do
 	echo "set Phase transition widths = $width" >> temp.prm
 	echo "end" >> temp.prm
 	echo "end" >> temp.prm
-	/home/dannberg/software/aspect-melt-build/aspect temp.prm | gawk '/freedom/ {printf "%s ", $6}' | sed 's/,//g' >> $filename
+	$ASPECT_DIR/aspect temp.prm | gawk '/freedom/ {printf "%s ", $6}' | sed 's/,//g' >> $filename
         T_max=`grep "Maximal temperature (K)" output/statistics | gawk '{ print $2}' | sed s/.$//`
         tail -1 output/statistics | gawk "{ print \$${T_max}}" | tee -a $filename
 	grep Solving output/log.txt
