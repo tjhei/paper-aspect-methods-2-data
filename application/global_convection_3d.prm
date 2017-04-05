@@ -1,4 +1,4 @@
-set Additional shared libraries            = ../shared_libs/libboundary_layers.so,../shared_libs/libcitcom_reference_comparison.so
+set Additional shared libraries            = libboundary_layers.so,libcitcom_reference_comparison.so
 set CFL number                             = 1.0
 set End time                               = 5e8
 set Adiabatic surface temperature          = 1613.0
@@ -58,13 +58,12 @@ subsection Material model
   set Model name = Steinberger
 
   subsection Steinberger model
-    set Data directory                   = /scratch/user/gassmoeller/aspect_data/material-model/steinberger/
+    set Data directory                   = data/material/
     set Material file names              = harz-xu2008.txt,morb-xu2008.txt
     #set Lateral viscosity file name      = test-viscosity-prefactor.txt 
     set Radial viscosity file name       = radial-visc-simple-2.txt
     set Bilinear interpolation           = true
     set Latent heat                      = false
-    set Compressible                     = true
     set Use lateral average temperature for viscosity  = false
     set Reference viscosity              = 1e21
     set Maximum viscosity                = 1.5e23
@@ -132,13 +131,11 @@ end
 
 subsection Boundary velocity model
   subsection GPlates model
-    set Data directory = /scratch/user/gassmoeller/aspect_data/velocity-boundary-conditions/gplates/2-2-degree-velocities/5deg_spatial_smoothed/
+    set Data directory = data/velocity/5deg_spatial_smoothed/
     set Velocity file name = velocity_%03d.gpml
-    set Velocity file start time = 0
-    set Time step = 1e6
+    set Data file time step = 1e6
     set Point one = 1.5708,4.87
     set Point two = 1.5708,5.24
-    set Interpolation width = 0
   end
 end
 
