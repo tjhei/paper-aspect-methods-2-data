@@ -15,7 +15,7 @@ subsection Adiabatic conditions model
   set Model name = function
 
   subsection Function
-    set Function constants  = c=30#{0|1|10|100}
+    set Function constants  = c=10 # {0|1|10|30}
     set Function expression = 0; 0; 1.6+atan(c*(depth-0.5))
     set Variable names      = depth
   end
@@ -86,7 +86,7 @@ end
 
 subsection Mesh refinement
   set Initial adaptive refinement        = 0
-  set Initial global refinement          = {5|6|7|8}
+  set Initial global refinement          = 5 # {5|6|7|8}
   set Time steps between mesh refinement = 0
 end
 
