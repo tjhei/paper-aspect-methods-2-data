@@ -114,7 +114,3 @@ subsection Postprocess
     set Time between graphical output = 1e6
   end
 end
-
-subsection Checkpointing
-  set Time between checkpoint  = 1800
-end
