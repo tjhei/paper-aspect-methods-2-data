@@ -3,7 +3,6 @@
 
 set Dimension                              = 2
 set Use years in output instead of seconds = true
-set End time                               = 2.63e8
 set Output directory                       = refinement_viscosity
 set Adiabatic surface temperature          = 1600
 set Resume computation                     = true
@@ -116,5 +115,6 @@ subsection Postprocess
 end
 
 subsection Termination criteria
-  set End step = 2740
+  set End step = 1310
+  set Termination criteria = end step
 end

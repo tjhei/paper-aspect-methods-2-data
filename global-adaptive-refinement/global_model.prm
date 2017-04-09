@@ -3,10 +3,10 @@
 
 set Dimension                              = 2
 set Use years in output instead of seconds = true
-set End time                               = 3e8
+set End time                               = 2.85e8
 set Output directory                       = output_energy_density
 set Adiabatic surface temperature          = 1600
-set Resume computation                     = true
+set Resume computation                     = false
 
 
 subsection Material model
@@ -115,6 +115,6 @@ subsection Checkpointing
 end
 
 subsection Termination criteria
-  set End step = 2705
   set Checkpoint on termination = true
 end
+
